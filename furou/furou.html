@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+ <style>
+       body{
+           margin: 0px auto;
+           font:16px arial,'Microsoft YaHei';
+           background: #ededed;
+       }
+     #top{
+         width: 100%;
+         background: url("images/topbg_01.png");
+         height: 800px;
+
+     }
+       #img_logo{
+           float: left;
+           margin-top: 30px;
+           margin-left: 60px;
+       }
+     a:link{
+         text-decoration: none;
+         color: black;
+     }
+     a:hover{
+         color: red;
+     }
+     .circle{
+         border-radius: 50%;
+         background: black;
+         width: 10px;
+         height: 10px;
+         display: inline-block;
+         margin-left: 50px;
+         margin-right: 50px;
+     }
+       .circle2{
+           border-radius: 50%;
+           background: gray;
+           width: 10px;
+           height: 10px;
+           display: inline-block;
+           margin-left: 60px;
+
+       }
+       .circle3{
+           border-radius: 50%;
+           background: #80c269;
+           color: white;
+           /*width: 70px;*/
+           /*height: 70px;*/
+           display: inline-block;
+           padding: 20px 25px;
+           border: 2px solid #acd598;
+
+
+       }
+       .circle4{
+           border-radius: 50%;
+           background: #80c269;
+           /*width: 70px;*/
+           /*height: 70px;*/
+           display: inline-block;
+           padding: 5px 5px;
+           border: 2px solid white;
+           display: inline-block;
+           color: white;
+           font-weight: bold;
+           margin-left: 20px
+       }
+       .circle_num{
+           border-radius: 50%;
+           display: inline-block;
+           padding: 5px 5px;
+           border: 2px solid white;
+           display: inline-block;
+           color: white;
+           font-weight: bold;
+           background:#097c25
+       }
+       #hander{
+         margin-top: 50px;
+         margin-left: 20px;
+         float: left;
+         display: inline-block;
+     }
+     #mid{
+         border: 1px;
+          width: 1100px;
+         height: 3000px;
+         position: relative;top: -15px;left: 350px;
+         background:white;
+     /*Firefox4.0- 兼容 投影方式 X轴偏移量 Y轴偏移量阴影模糊半径 阴影扩展半径 阴影颜色*/
+        -webkit-box-shadow:0 0 10px black;
+         /*Safariand Google chrome10.0-  兼容 投影方式 X轴偏移量 Y轴偏移量阴影模糊半径 阴影扩展半径 阴影颜色*/
+         -moz-box-shadow:0 10px black;
+        /*Firefox4.0+、 Google chrome 10.0+ 、 Oprea10.5+ and IE9-  兼容 */
+         box-shadow:0 0 10px black;
+     }
+    #mid-top{
+        border: 1px;
+        width: 100%;
+        height: 20px;
+        background: black;
+    }
+     li{
+         list-style-type: none;
+         margin-top: 15px;
+
+     }
+     .text1{
+         width: 450px;
+         height: 300px;
+         background:#f5f5f5;
+         display: inline-block;
+         margin-top: 94px;
+     }
+     #d1{
+         position: relative;
+         width: 650px;height: 300px;margin-left: -80px;
+         background: url("images/1.png");
+         display: inline-block;
+     }
+     #bottom{
+          text-align: center;
+         width: 100%;
+         height: 350px;
+     }
+     .text_yuan{
+         font-weight: bold;
+         font-size: 16px;
+         color: #80c269
+     }
+     .text_the{
+         font-weight: bold;
+         font-size: 16px;
+         color:#dbdbdb
+     }
+     .text_shi{
+         font-size: 16px;
+         color: black
+     }
+ </style>
+<body>
+         <div id="top">
+
+               <a href="#"><img id="img_logo" src="images/furou_03.png"></a>
+             <div id="hander">
+               <a href="#" style="margin-left: 150px">首页</a>
+                   <div class="circle"> </div>
+               <a href="#">热门植物</a>
+                 <div class="circle"> </div>
+               <a href="#">新品速递</a>
+                 <div class="circle"> </div>
+               <a href="#">关于我们</a>
+                 <div class="circle"> </div>
+               <a href="#">玩家微博</a>
+                 <div class="circle"> </div>
+               <a href="#">联系我们</a>
+             </div>
+         </div>
+
+         <div id="mid">
+                 <div id="mid-top"></div>
+                 <span style="margin-left: 20px;margin-top: 20px;float: left">
+                     <a href="#" ><img src="images/home_03.png" style="height: 15px"></a>首页 >
+                     <a href="#"> <img src="images/about_05.png" style="height: 15px"></a>
+                     <font style="font-weight: bold;font-size: 20px">多肉预览</font>
+                 </span>
+                 <span style="margin-left: 270px;">
+                       <img  style="margin-top: 20px" src="images/02_04.png">
+                 </span>
+                 <div style="margin-left: 400px">
+                     <li>
+                         <font style="color: green;font-weight: 900;font-size: 40px">Meaty</font>
+                         <font style="margin-left: 20px;font-size: 40px">Attraction</font></li>
+                     <li style="margin-left: 40px;font-size: 10px">Globel high force grid Tsukito design Inc</li>
+                     <li style="margin-left: 70px">
+                         <font style="font-size: 20px;font-style: italic;letter-spacing: 10px;font-weight: bold">多/肉/预/览</font>
+                     </li>
+                     <li style="margin-left: 30px">
+                         <font  style="color: #cccccc;letter-spacing: 40px">DUOROU</font>
+                     </li>
+
+                 </div>
+             
+              <div style="margin-top: 40px;margin-left: 70px;display: inline-block;position: relative">
+                     <img src="images/tu_14.png" style="float: left">
+                     <div class="text1">
+
+                            <div style="margin-top: 50px;height: 100px">
+                                <font style="color:#80c269;font-weight: 900;font-size: 40px;margin-left: 50px;width: 100%">THE MEATY</font>
+                            </div>
+
+                             <font style="margin-left: 60px;font-weight: bold;font-size: 16px">原始森林深度行</font>
+                         <br>
+                             <font style="margin-left: 60px;font-size: 16px">始终如一，感受地球之美</font>
+                         <br><br>
+                         <div class="circle2"> </div> 999人浏览  <div class="circle2"> </div> 2016-09-22
+                         <div class="circle3" style="position: absolute;right: -40px;top: 70px">Mo<br>re+</div>
+
+                     </div>
+              </div>
+
+             <div id="d1">
+                 <div class="circle3" style="position: absolute;top: 150px;left:90px;">Mo<br>re+</div>
+                    <div style="position:absolute;left: 320px;top: 30px ">
+                        <font style="color: white;font-weight: 900;font-size: 40px;">THE MEATY</font>
+                        <br><br>
+                        <font style="font-weight: bold;font-size: 16px;color: white">原始森林深度行</font>
+                        <br>
+                        <font style="font-size: 16px;color: white">始终如一，感受地球之美</font>
+                        <br><br>
+                        <div class="circle2" style="margin-left: 0px"> </div> <font color="white">999人浏览</font>  <div class="circle2"> </div> <font color="white">2016-09-22</font>
+                         </div>
+             </div>
+             <div style="display: inline-block;position: absolute;right: 80px">
+                 <img src="images/flower3_14.png"width="450px" height="300px">
+             </div>
+
+              <div >
+                  <img src="images/tu_14.png" style="margin-top: -4px;margin-left: 70px;float: left">
+              </div>
+
+             <div class="text1" style="margin-top: -5px">
+
+                 <div style="margin-top: 60px;height:60px">
+                     <font style="color:#097c25;font-weight: 900;font-size: 40px;margin-left: 50px;width: 100%">THE MEATY</font>
+                 </div>
+
+                 <font style="margin-left: 60px;font-weight: bold;font-size: 16px;color: #808080">原始森林深度行</font>
+                 <br><br>
+                 <div class="circle2"> </div> 999人浏览  <div class="circle2"> </div> 2016-09-22
+                 <div class="circle3" style="position: absolute;right: 40px;top: 1280px;background: #097c25">Mo<br>re+</div>
+
+             </div>
+             <div style="background: #80c269;width: 350px;height: 94px;position: absolute;right: 180px" >
+                      <a href="#"> <img src="images/jaintou_20.png" style="margin-top: 35px;margin-left: 20px"></a>
+                      <font class="circle4" style="background: white;color: #80c269" >01</font>
+                 <font class="circle4">02</font>
+                 <font class="circle4">03</font>
+                 <font class="circle4">04</font>
+                      <a href="#" style="margin-left: 10px"> <img src="images/jiantou_22.png"></a>
+             </div>
+
+
+              <div style="position: absolute;top: 1500px;width: 100%;text-align: center">
+                       <font style="font-size: 30px;font-style: italic;letter-spacing: 20px;color: #097c25;font-weight: 900">全/部/多/肉</font>
+                       <br>
+                       <font style="font-size: 30px;font-style: italic;font-weight: 900;margin-left: -20px">THE ALL &nbsp;&nbsp;&nbsp;&nbsp; BEATUL</font>
+              </div>
+
+                  <div style="width: 100%;height: 200px;border-top: 2px solid #f5f5f5;position: absolute;top: 1566px;filter:alpha(opacity=60);opacity: 0.6;background: #ffffff ">
+                     <img src="images/02_04.png" style="position: absolute;top: -40px;left:510px">
+                  </div>
+             <div style="position: absolute;top: 1650px;width: 100%;text-align: center">
+                 <a href="#" style="padding: 10px 20px 10px 20px;color: white;background: #acd598;">THENEW</a>
+             </div>
+
+             <div style="position:  absolute;top: 1750px;width: 100%;height: 1000px">
+                 <div style="background: url(images/border_08.png) no-repeat;height: 455px; width: 290px;position: absolute;top: -40px;left: 400px"></div>
+                 <div style="background: url(images/xia_08.png) no-repeat;width: 300px;height: 160px;margin-left: 80px;padding-top: 305px;display: inline-block;">
+
+                     <font class="text_yuan">原始森林深度行</font>&nbsp;&nbsp;
+                     <font class="text_the">THE HOT</font>
+                     <br>
+                     <font class="text_shi">始终如一，感受地球之美</font>
+                     <br>
+                     <div class="circle2" style="margin-left: 0px"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px"> </div> 2016-09-22
+
+                 </div>
+
+                 <div style="background: url(images/xia_08.png) no-repeat;width: 300px;height: 160px;margin-left:40px;padding-top: 305px;display: inline-block">
+
+                     <font class="text_yuan">原始森林深度行</font>&nbsp;&nbsp;
+                     <font class="text_the">THE HOT</font>
+                     <br>
+                     <font class="text_shi">始终如一，感受地球之美</font>
+                     <br>
+                     <div class="circle2" style="margin-left: 0px"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px"> </div> 2016-09-22
+
+                 </div>
+                 <div style="background: url(images/xia_08.png) no-repeat;width: 300px;height: 160px;margin-left:40px;padding-top: 305px;display: inline-block">
+
+                     <font class="text_yuan">原始森林深度行</font>&nbsp;&nbsp;
+                     <font class="text_the">THE HOT</font>
+                     <br>
+                     <font class="text_shi">始终如一，感受地球之美</font>
+                     <br>
+                     <div class="circle2" style="margin-left: 0px"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px"> </div> 2016-09-22
+                 </div>
+
+                 <div style="background: url(images/xia_08.png) no-repeat;width: 300px;height: 160px;margin-left: 80px;padding-top: 305px;display: inline-block">
+
+                     <font class="text_yuan">原始森林深度行</font>&nbsp;&nbsp;
+                     <font class="text_the">THE HOT</font>
+                     <br>
+                     <font class="text_shi">始终如一，感受地球之美</font>
+                     <br>
+                     <div class="circle2" style="margin-left: 0px"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px"> </div> 2016-09-22
+                 </div>
+                 <div style="background: url(images/xia_08.png) no-repeat;width: 300px;height: 160px;margin-left:40px;padding-top: 305px;display: inline-block">
+
+                     <font class="text_yuan">原始森林深度行</font>&nbsp;&nbsp;
+                     <font class="text_the">THE HOT</font>
+                     <br>
+                     <font class="text_shi">始终如一，感受地球之美</font>
+                     <br>
+                     <div class="circle2" style="margin-left: 0px"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px"> </div> 2016-09-22
+                 </div>
+                 <div style="background: url(images/xia_08.png) no-repeat;width: 300px;height: 160px;margin-left:40px;padding-top: 305px;display: inline-block">
+
+                     <font class="text_yuan">原始森林深度行</font>&nbsp;&nbsp;
+                     <font class="text_the">THE HOT</font>
+                     <br>
+                     <font class="text_shi">始终如一，感受地球之美</font>
+                     <br>
+                     <div class="circle2" style="margin-left: 0px"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px"> </div> 2016-09-22
+                 </div>
+
+                 <div style="width: 100%;text-align: center">
+                     <a href="#"> <img src="images/jiantou_15.png" style="margin-top: 35px;margin-left: 20px"></a>
+                    <a href="#"> <font class="circle_num" style="background: #80c269;color: white;" >01</font></a>
+                    <a href="#"> <font class="circle_num" >02</font></a>
+                    <a href="#"> <font class="circle_num">03</font></a>
+                    <a href="#"> <font class="circle_num">04</font></a>
+                     <div class="circle2" style="margin-left: 0px;background: black;width: 5px;height: 5px"> </div>
+                     <div class="circle2" style="margin-left: 0px;background: black;width: 5px;height: 5px"> </div>
+                     <div class="circle2" style="margin-left: 0px;background: black;width: 5px;height: 5px"> </div>
+                    <a href="#"> <font class="circle_num">49</font></a>
+                    <a href="#"> <font class="circle_num">50</font></a>
+                     <font style="font-weight: bold">至</font>
+                     <input type="text" style="width:30px;border: 1px solid black">
+                     <font style="font-weight: bold">页</font>
+                     <a href="#"><font class="circle_num">go</font></a>
+                     <a href="#" style="margin-left: 10px"> <img src="images/jiantou_12.png"></a>
+                 </div>
+
+             </div>
+
+         </div>
+
+         <div id="bottom">
+             <div style="text-align: center;margin-top:30px;margin-right: 80px">
+                 <a href="#" >首页</a>
+                 <div class="circle"> </div>
+                 <a href="#">热门植物</a>
+                 <div class="circle"> </div>
+                 <a href="#">新品速递</a>
+                 <div class="circle"> </div>
+                 <a href="#">关于我们</a>
+                 <div class="circle"> </div>
+                 <a href="#">玩家微博</a>
+                 <div class="circle"> </div>
+                 <a href="#">联系我们</a>
+             </div>
+             
+              <img src="images/furou_03.png" style="margin-top: 50px;margin-right: 80px">
+          <br> <br><br>
+             <font style="margin-top: 50px;margin-right: 80px;color:black;font-family: Microsoft YaHei;font-size: 20px">Copyright 2016-2017 All Rights Reserves By Furou Flower Co.Lld</font>
+         </div>
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            margin: 0px auto;
+            font:12px arial,'Microsoft YaHei';
+            background:#f5f5f5;
+        }
+        #top{
+            width: 100%;
+            background: url("images/topimg_01.png") no-repeat;
+            height: 800px;
+
+        }
+        #img_lgo{
+            float: left;
+            margin-left: 250px;
+        }
+
+        a:link{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: red;
+        }
+        .circle{
+            border-radius: 50%;
+            background: black;
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .circle2{
+            border-radius: 50%;
+            background: gray;
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            margin-left: 60px;
+
+        }
+        .circle4{
+            border-radius: 50%;
+            background: #80c269;
+            /*width: 70px;*/
+            /*height: 70px;*/
+            display: inline-block;
+            padding: 5px 5px;
+            border: 2px solid white;
+            display: inline-block;
+            color: white;
+            font-weight: bold;
+            margin-left: 20px
+        }
+        #hander{
+            width: 100%;
+            margin-top: 50px;
+            display: inline-block;
+        }
+        #mid{
+            border: 1px;
+            width: 1100px;
+            height: 3300px;
+            position: relative;top: -15px;left: 380px;
+            background:white;
+            /*Firefox4.0- 兼容 投影方式 X轴偏移量 Y轴偏移量阴影模糊半径 阴影扩展半径 阴影颜色*/
+            -webkit-box-shadow:0 0 10px black;
+            /*Safariand Google chrome10.0-  兼容 投影方式 X轴偏移量 Y轴偏移量阴影模糊半径 阴影扩展半径 阴影颜色*/
+            -moz-box-shadow:0 10px black;
+            /*Firefox4.0+、 Google chrome 10.0+ 、 Oprea10.5+ and IE9-  兼容 */
+            box-shadow:0 0 10px black;
+        }
+        #mid-top{
+            border: 1px;
+            width: 100%;
+            height: 20px;
+            background: black;
+        }
+        .mid_1{
+               width: 400px;
+               height: 100px;
+            border-bottom: 1px solid #acd598;
+            text-align: center;
+               
+        }
+        .circle_num{
+            border-radius: 50%;
+            display: inline-block;
+            padding: 10px 10px;
+            border: 2px solid white;
+            display: inline-block;
+            color: white;
+            font-weight: bold;
+            background:#097c25
+        }
+        .shadow_tb{
+            /*Firefox4.0- 兼容 投影方式 X轴偏移量 Y轴偏移量阴影模糊半径 阴影扩展半径 阴影颜色*/
+            /*-webkit-box-shadow:0px 10px 10px black;*/
+            /*Safariand Google chrome10.0-  兼容 投影方式 X轴偏移量 Y轴偏移量阴影模糊半径 阴影扩展半径 阴影颜色*/
+            /*-moz-box-shadow:0px 10px black;*/
+            /*Firefox4.0+、 Google chrome 10.0+ 、 Oprea10.5+ and IE9-  兼容 */
+            box-shadow:0 10px 10px #e2e2e2;
+
+        }
+        .shadow_tb2{
+            /*Firefox4.0- 兼容 投影方式 X轴偏移量 Y轴偏移量阴影模糊半径 阴影扩展半径 阴影颜色*/
+            /*-webkit-box-shadow:0px 10px 10px black;*/
+            /*Safariand Google chrome10.0-  兼容 投影方式 X轴偏移量 Y轴偏移量阴影模糊半径 阴影扩展半径 阴影颜色*/
+            /*-moz-box-shadow:0px 10px black;*/
+            /*Firefox4.0+、 Google chrome 10.0+ 、 Oprea10.5+ and IE9-  兼容 */
+            box-shadow:0 0 10px #e2e2e2;
+
+        }
+        .text_yuan{
+            font-weight: bold;
+            font-size: 16px;
+            color: black;
+        }
+        .text_the{
+            font-weight: bold;
+            font-size: 16px;
+            color:#dbdbdb
+        }
+        .text_shi{
+            font-size: 16px;
+            color: black
+        }
+        p{
+            line-height: 10px;
+        }
+        .circle3{
+            border-radius: 50%;
+            background: #a8a8a8;
+            width: 5px;
+            height: 5px;
+            display: inline-block;
+            margin: 0px;
+            padding: 0px ;
+            float: left;
+        ;
+        }
+        .mline{
+            width:467px;
+            height:1px;margin:0px auto;
+            padding:0px;
+            background-color:#D5D5D5;
+            overflow:hidden;
+            display: inline-block;
+           margin-top: 2px;
+            float: left;
+        }
+        #bottom{
+            /*text-align: center;*/
+            width: 100%;
+            height: 300px;
+            position: relative;bottom: -50px;
+        }
+
+    </style>
+</head>
+<body>
+
+      <div id="top">
+          <div id="hander">
+             <a href="#"><img id="img_lgo" src="images/furou_03.png" width="100px"></a>
+             <a href="#"  style="margin-left: 60px">首页</a>
+             <div class="circle"> </div>
+             <a href="#">热门植物</a>
+             <div class="circle"> </div>
+             <a href="#" style="background: #dde7d8;padding: 10px 20px 10px 20px">新品速递</a>
+             <div class="circle"> </div>
+             <a href="#">关于我们</a>
+             <div class="circle"> </div>
+             <a href="#">玩家微博</a>
+             <div class="circle"> </div>
+             <a href="#">联系我们</a>
+          </div>
+      </div>
+
+      <div id="mid">
+          <div id="mid-top"></div>
+                 <span style="margin-left: 20px;margin-top: 20px;float: left">
+                     <a href="#" ><img src="images/home_03.png" style="height: 15px"></a>首页 >
+                     <a href="#"> <img src="images/about_05.png" style="height: 15px"></a>
+                     <font style="font-weight: bold;font-size: 18px">新品速递</font>
+                 </span>
+           <div class="mid_1" style="position: absolute;top: 100px;left: 330px">
+                  <img src="images/zi_04.png" >
+               <br>
+                  <font style="font-weight: bold;font-size: 20px;letter-spacing: 10px">Releas&es</font>
+               <br>
+                 <div class="circle" style="margin-left: 10px;margin-right: 0px;width: 5px;height: 5px"></div>
+                 <font style="font-size: 12px;font-weight: bold;letter-spacing: 20px;margin-right: 20px;margin-left: 20px">热门新品</font>
+                 <div class="circle" style="margin-left: -20px;margin-right: 10px;width: 5px;height: 5px"></div>
+
+           </div>
+          <div style="width: 100%;height: 250px;position: absolute;top: 250px">
+
+             <div style="background: url(images/numbg_12.png) no-repeat;height: 120px;width: 175px;position: absolute;left: 60px;top:30px">
+                     <font style="font-size: 100px;color: white;margin-left: 20px">01</font>
+             </div>
+              <div style="width: 280px;height: 170px;position: absolute;left: 235px">
+                   <img src="images/p_12.png">
+              </div>
+              <div style="width: 400px;height: 120px;background: #ffffff;position: absolute;left: 520px;top:30px;border: 1px solid #e2e2e2">
+                  <br>
+                  <font style="margin-left: 40px;font-weight: bold;font-size: 16px;color: black">原始森林深度行</font>&nbsp;&nbsp;
+                  <font style="font-weight: bold;font-size: 16px;color:#dbdbdb">THE HOT</font>
+                  <br><br>
+                  <font style="margin-left: 40px;font-size: 16px;color: black">始终如一，感受地球之美</font>
+                  <br><br>
+                  <div class="circle2" style="margin-left: 40px;"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px"> </div> 2016-09-22
+                    
+                  <img src="images/triangle_18.png" style="position: absolute;right: 0px;bottom: 0px">
+              </div>
+
+          </div>
+
+          <div style="width: 100%;height: 250px;position: absolute;top: 450px;left: -40px">
+
+              <div style="background: url(images/numbg_12.png) no-repeat;height: 120px;width: 175px;position: absolute;left: 60px;top:30px">
+                  <font style="font-size: 100px;color: white;margin-left: 20px">02</font>
+              </div>
+              <div style="width: 280px;height: 170px;position: absolute;left: 235px">
+                  <img src="images/p_12.png">
+              </div>
+              <div class="shadow_tb" style="width: 400px;height: 120px;background: #ffffff;position: absolute;left: 520px;top:30px;border: 1px solid #e2e2e2">
+                  <br>
+                  <font style="margin-left: 40px;font-weight: bold;font-size: 16px;color: black">原始森林深度行</font>&nbsp;&nbsp;
+                  <font style="font-weight: bold;font-size: 16px;color:#dbdbdb">THE HOT</font>
+                  <br><br>
+                  <font style="margin-left: 40px;font-size: 16px;color: black">始终如一，感受地球之美</font>
+                  <br><br>
+                  <div class="circle2" style="margin-left: 40px;"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px"> </div> 2016-09-22
+
+                  <img src="images/jiantou_24.png" style="position: absolute;right: 30px;bottom:40px;width: 40px;;">
+              </div>
+
+          </div>
+
+
+          <div style="width: 100%;height: 250px;position: absolute;top: 650px">
+
+              <div style="background: url(images/numbg_12.png) no-repeat;height: 120px;width: 175px;position: absolute;left: 60px;top:30px">
+                  <font style="font-size: 100px;color: white;margin-left: 20px">03</font>
+              </div>
+              <div style="width: 280px;height: 170px;position: absolute;left: 235px">
+                  <img src="images/p_12.png">
+              </div>
+              <div style="width: 400px;height: 120px;background: #ffffff;position: absolute;left: 520px;top:30px;border: 1px solid #e2e2e2">
+                  <br>
+                  <font style="margin-left: 40px;font-weight: bold;font-size: 16px;color: black">原始森林深度行</font>&nbsp;&nbsp;
+                  <font style="font-weight: bold;font-size: 16px;color:#dbdbdb">THE HOT</font>
+                  <br><br>
+                  <font style="margin-left: 40px;font-size: 16px;color: black">始终如一，感受地球之美</font>
+                  <br><br>
+                  <div class="circle2" style="margin-left: 40px;"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px"> </div> 2016-09-22
+
+                  <img src="images/triangle_18.png" style="position: absolute;right: 0px;bottom: 0px">
+              </div>
+
+          </div>
+
+          <div style="width: 100%;text-align: center;position: absolute;top:850px;right: 40px">
+              <a href="#"> <img src="images/jiantou_15.png" style="margin-top: 35px"></a>
+              <a href="#"> <font class="circle_num" style="background: #80c269;color: white;margin-left: 30px" >01</font></a>
+              <a href="#"> <font class="circle_num" >02</font></a>
+              <a href="#"> <font class="circle_num">03</font></a>
+              <a href="#"> <font class="circle_num">04</font></a>
+              <a href="#" style="margin-left: 30px"> <img src="images/jiantou_12.png"></a>
+          </div>
+          <div style="position: absolute;top: 1000px;width: 100%;height: 800px;border-top: 2px solid #bdddad">
+              <div class="mid_1" style="position: absolute;top: 100px;left: 300px">
+                 <img src="images/zi_04.png" >
+                 <br>
+                 <font style="font-weight: bold;font-size: 20px;letter-spacing: 10px">Releas&es</font>
+                 <br>
+                 <div class="circle" style="margin-left: 10px;margin-right: 0px;width: 5px;height: 5px"></div>
+                 <font style="font-size: 12px;font-weight: bold;letter-spacing: 20px;margin-right: 20px;margin-left: 20px">热门新品</font>
+                 <div class="circle" style="margin-left: -20px;margin-right: 10px;width: 5px;height: 5px"></div>
+              </div>
+
+              <div style="width: 400px;height: 150px; float: left;background: url(images/torse_03.png) no-repeat;text-align: right;margin-top: 250px;margin-left: 100px">
+
+                     <div class="text_yuan"  style="display: inline-block;margin-top: 30px">原始森林深度行</div>&nbsp;&nbsp;
+                     <font class="text_the">THE HOT</font>
+                     <div class="text_shi" style="margin-right: 15px">
+                         始终如一，感受地球之美
+                     </div>
+                     <br>
+                     <div style="margin-right: 25px">
+                     <div class="circle2" style="margin-right: 0px"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px;"> </div> 2016-09-22
+                     </div>
+
+                 </div>
+              <div style="width: 400px;height: 150px; float: left;background: url(images/torse_03.png) no-repeat;text-align: right;margin-top: 250px;margin-left: 100px">
+
+                  <div class="text_yuan"  style="display: inline-block;margin-top: 30px">原始森林深度行</div>&nbsp;&nbsp;
+                  <font class="text_the">THE HOT</font>
+                  <div class="text_shi" style="margin-right: 15px">
+                      始终如一，感受地球之美
+                  </div>
+                  <br>
+                  <div style="margin-right: 25px">
+                      <div class="circle2" style="margin-right: 0px"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px;"> </div> 2016-09-22
+                  </div>
+              </div>
+              <div style="width: 400px;height: 150px; float: left;background: url(images/torse_03.png) no-repeat;text-align: right;margin-top: 20px;margin-left: 100px">
+
+                  <div class="text_yuan"  style="display: inline-block;margin-top: 30px">原始森林深度行</div>&nbsp;&nbsp;
+                  <font class="text_the">THE HOT</font>
+                  <div class="text_shi" style="margin-right: 15px">
+                      始终如一，感受地球之美
+                  </div>
+                  <br>
+                  <div style="margin-right: 25px">
+                      <div class="circle2" style="margin-right: 0px"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px;"> </div> 2016-09-22
+                  </div>
+              </div>
+              <div style="width: 400px;height: 150px; float: left;background: url(images/torse_03.png) no-repeat;text-align: right;margin-top: 20px;margin-left: 100px">
+
+                  <div class="text_yuan"  style="display: inline-block;margin-top: 30px">原始森林深度行</div>&nbsp;&nbsp;
+                  <font class="text_the">THE HOT</font>
+                  <div class="text_shi" style="margin-right: 15px">
+                      始终如一，感受地球之美
+                  </div>
+                  <br>
+                  <div style="margin-right: 25px">
+                      <div class="circle2" style="margin-right: 0px"> </div> 999人浏览  <div class="circle2" style="margin-left: 20px;"> </div> 2016-09-22
+                  </div>
+              </div>
+
+              <div style="width: 100%;text-align: center;float: left;margin-top: 20px;margin-left: -35px">
+                  <a href="#"> <img src="images/jiantou_15.png" style="margin-top: 35px"></a>
+                  <a href="#"> <font class="circle_num" style="background: #80c269;color: white;margin-left: 30px" >01</font></a>
+                  <a href="#"> <font class="circle_num" >02</font></a>
+                  <a href="#"> <font class="circle_num">03</font></a>
+                  <a href="#"> <font class="circle_num">04</font></a>
+                  <a href="#" style="margin-left: 30px"> <img src="images/jiantou_12.png"></a>
+              </div>
+
+          </div>
+
+          <div style="width: 1300px;height: 230px;position: absolute;top: 1800px;right: -80px"><img src="images/flower_07.png"></div>
+
+          <div style="width: 100%;height: 900px;position: absolute;top: 2100px;">
+              <div class="mid_1" style="position: absolute;top: 40px;left: 330px">
+                  <img src="images/zi_04.png" >
+                  <br>
+                  <font style="font-weight: bold;font-size: 20px;letter-spacing: 10px">Releas&es</font>
+                  <br>
+                  <div class="circle" style="margin-left: 10px;margin-right: 0px;width: 5px;height: 5px"></div>
+                  <font style="font-size: 12px;font-weight: bold;letter-spacing: 20px;margin-right: 20px;margin-left: 20px">热门新品</font>
+                  <div class="circle" style="margin-left: -20px;margin-right: 10px;width: 5px;height: 5px"></div>
+              </div>
+
+              <div style="width: 600px;height: 200px;position: absolute;top: 200px">
+                     <img src="images/grenns_11.png" style="margin-left: 70px">
+                     <div style="width: 480px;height: 200px;display: inline-block;position: absolute;right: -375px;top: 20px">
+                             <p style="font-size: 16px"><font style="color: #097c25;font-weight: bold">这个世界还是美好的</font>
+                                 <span style="color: red;padding: 1px 8px;border: 1px solid red;margin-left: 20px">NEW</span>
+                                 <span style="color: orange;padding: 1px 8px;border: 1px solid orange">HOT</span>
+                             </p>
+                             <p style="font-size: 14px"> 没有什么是设计解决不了的/设计大赛获奖感言
+                                 <span style="color: #b6b6b6"> <img src="images/clock_14.png" style="margin-left: 100px"> 2017-03-22</span>
+                             </p>
+                             <p> <div class="circle3" ></div> <div class="mline"></div> <div class="circle3"></div></p>
+                             <p style="line-height: 15px;color: #b6b6b6;margin-top: 30px">
+                                 对设计的全面分析会不断的遇到阻碍，从各个角度的研究可能得到各种博论的叠加，但是这完全不影响我们对他的许多可能性和不确定性以及他的弱点，设计文化试图通过具有特殊意义的设计理念来解释和定义被设计客体，这个过化物质是社会认同的一个符
+                             </p>
+                     </div>
+              </div>
+
+              <div  class="shadow_tb2" style="width: 87%;height: 200px;position: absolute;top: 450px;left: 30px">
+                  <img src="images/grenns_11.png" style="margin-left: 40px;margin-top: 10px">
+                  <div style="width: 480px;height: 200px;display: inline-block;position: absolute;top: 20px;left: 460px">
+                      <p style="font-size: 16px"><font style="color: #097c25;font-weight: bold">这个世界还是美好的</font>
+                          <span style="color: red;padding: 1px 8px;border: 1px solid red;margin-left: 20px">NEW</span>
+                          <span style="color: orange;padding: 1px 8px;border: 1px solid orange">HOT</span>
+                      </p>
+                      <p style="font-size: 14px"> 没有什么是设计解决不了的/设计大赛获奖感言
+                          <span style="color: #b6b6b6"> <img src="images/clock_14.png" style="margin-left: 100px"> 2017-03-22</span>
+                      </p>
+                      <p> <div class="circle3" ></div> <div class="mline"></div> <div class="circle3"></div></p>
+                      <p style="line-height: 15px;color: #b6b6b6;margin-top: 30px">
+                          对设计的全面分析会不断的遇到阻碍，从各个角度的研究可能得到各种博论的叠加，但是这完全不影响我们对他的许多可能性和不确定性以及他的弱点，设计文化试图通过具有特殊意义的设计理念来解释和定义被设计客体，这个过化物质是社会认同的一个符
+                      </p>
+                  </div>
+              </div>
+
+              <div style="width: 600px;height: 200px;position: absolute;top: 700px">
+                  <img src="images/grenns_11.png" style="margin-left: 70px">
+                  <div style="width: 480px;height: 200px;display: inline-block;position: absolute;right: -375px;top: 20px">
+                      <p style="font-size: 16px"><font style="color: #097c25;font-weight: bold">这个世界还是美好的</font>
+                          <span style="color: red;padding: 1px 8px;border: 1px solid red;margin-left: 20px">NEW</span>
+                          <span style="color: orange;padding: 1px 8px;border: 1px solid orange">HOT</span>
+                      </p>
+                      <p style="font-size: 14px"> 没有什么是设计解决不了的/设计大赛获奖感言
+                          <span style="color: #b6b6b6"> <img src="images/clock_14.png" style="margin-left: 100px"> 2017-03-22</span>
+                      </p>
+                      <p> <div class="circle3" ></div> <div class="mline"></div> <div class="circle3"></div></p>
+                      <p style="line-height: 15px;color: #b6b6b6;margin-top: 30px">
+                          对设计的全面分析会不断的遇到阻碍，从各个角度的研究可能得到各种博论的叠加，但是这完全不影响我们对他的许多可能性和不确定性以及他的弱点，设计文化试图通过具有特殊意义的设计理念来解释和定义被设计客体，这个过化物质是社会认同的一个符
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div style="width: 100%;text-align: center;position: absolute;bottom:180px;right: 40px">
+              <a href="#"> <img src="images/jiantou_15.png" style="margin-top: 35px"></a>
+              <a href="#"> <font class="circle_num" style="background: #80c269;color: white;margin-left: 30px" >01</font></a>
+              <a href="#"> <font class="circle_num" >02</font></a>
+              <a href="#"> <font class="circle_num">03</font></a>
+              <a href="#"> <font class="circle_num">04</font></a>
+              <a href="#" style="margin-left: 30px"> <img src="images/jiantou_12.png"></a>
+          </div>
+      </div>
+
+      <div id="bottom">
+          <div style="margin-top:30px;width: 1000px;position: relative;left: 480px">
+              <a href="#" >首页</a>
+              <div class="circle"> </div>
+              <a href="#">热门植物</a>
+              <div class="circle"> </div>
+              <a href="#">新品速递</a>
+              <div class="circle"> </div>
+              <a href="#">关于我们</a>
+              <div class="circle"> </div>
+              <a href="#">玩家微博</a>
+              <div class="circle"> </div>
+              <a href="#">联系我们</a>
+          </div>
+
+          <img src="images/furou_03.png" style="margin-top: 50px;margin-left: 830px">
+          <br> <br><br>
+          <font style="margin-top: 50px;margin-left:580px;color:black;font-family: Microsoft YaHei;font-size: 20px">Copyright 2016-2017 All Rights Reserves By Furou Flower Co.Lld</font>
+      </div>
+
+</body>
+</html>
